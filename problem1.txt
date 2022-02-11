@@ -1,0 +1,6 @@
+if __name__ == "__main__":
+    user_in = str(input("Please enter a string: "))
+    print(f"You entered {user_in} and its type is {type(user_in)}")
+
+    user_in2 = str(input("Please enter an integer: "))
+    print(f"You entered {user_in2} and its type is {type(user_in)}")

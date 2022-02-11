@@ -1,0 +1,12 @@
+if __name__ == "__main__":
+    vowels = ["a", "e", "i", "o", "u", "y", "A", "E", "I", "O", "U", "Y"]
+    flag = 0
+    user_letter = input("Enter a letter to see if it's a vowel: ")
+    for vowel in vowels:
+        if user_letter == vowel:
+            flag = 1
+
+    if flag:
+        print("Your letter is a vowel!")
+    else:
+        print("Your letter is not a vowel!")

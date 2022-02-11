@@ -1,0 +1,4 @@
+if __name__ == "__main__":
+    user_in = float(input("Enter the radius of a cirle: "))
+    area = 3.14159 * user_in * user_in
+    print(f"Area of cirlce: {area}")

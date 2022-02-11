@@ -1,0 +1,2 @@
+if __name__ == "__main__":
+    print([i**4 for i in range(0, 20)])

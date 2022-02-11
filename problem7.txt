@@ -1,0 +1,29 @@
+if __name__ == "__main__":
+    option = 0
+    date = "2/10/22"
+    guest_list = []
+    date_list = []
+    badge_size = []
+
+    while option != 3:
+        print("\nGuest List Machine\n=================\n")
+        print("Choose action: \n 1) Add Guest 2) Print Guests 3) Exit")
+        option = int(input("Selection: "))
+
+        if option == 1:
+            firstn = input("Guest First Name:")
+            lastn = input("Guest Last Name: ")
+            guest_list.append(firstn + "" + lastn)
+            date_list.append(date)
+
+            print(f"\n {firstn} {lastn} added on {date}")
+
+        if option == 2:
+            for counter, guest in enumerate(guest_list):
+                if len(guest) <= 15:
+                    badge_size = "Small"
+                else:
+                    badge_size = "Large"
+                print(
+                    f"{counter}) {guest} added {date_list[counter]} Badge Size: {badge_size}"
+                )
